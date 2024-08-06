@@ -57,7 +57,10 @@ func NewCmdDownload(f *cmdutil.Factory, runF func(*DownloadOptions) error) *cobr
 		  # Download a specific artifact within a run
 		  $ gh run download <run-id> -n <name>
 
-		  # Download specific artifacts across all runs in a repository
+		  # Download the latest artifact with a specific name
+		  $ gh run download -n <name>
+
+		  # Download multiple latest artifacts by name
 		  $ gh run download -n <name1> -n <name2>
 
 		  # Select artifacts to download interactively
